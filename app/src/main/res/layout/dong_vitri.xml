@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên vị trí"
+            android:textSize="30sp"
+            android:textColor="#B404139C"
+            android:id="@+id/textviewTenvitri"></TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:textSize="15sp"
+            android:textColor="#B31BB0"
+            android:id="@+id/textviewMotavitri"></TextView>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/map"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:id="@+id/imageHinhvitri">
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageviewSuavitri">
+
+        </ImageView>
+
+        <ImageView
+            android:src="@drawable/delete"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageviewXoavitri">
+
+
+        </ImageView>
+
+
+    </LinearLayout>
+</LinearLayout>

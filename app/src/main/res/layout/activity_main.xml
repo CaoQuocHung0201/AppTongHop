@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_gravity="center"
+        android:id="@+id/textViewTenApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:drawableLeft="@drawable/iconcat"
+        android:drawableRight="@drawable/iconcat"
+        android:gravity="center"
+        android:text="Your App"
+        android:textColor="#EC0D54"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1.1"
+            android:textStyle="bold"
+            android:textColor="#352FD5"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời khóa biểu">
+        </TextView>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textStyle="bold"
+            android:textColor="#352FD5"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhắc nhở sự kiện">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/schedule"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewThoiKhoaBieu"></ImageView>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/stickynotes"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewSuKien"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:textStyle="bold"
+            android:textColor="#352FD5"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkin">
+        </TextView>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:textStyle="bold"
+            android:textColor="#352FD5"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý chi tiêu">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/gps"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewCheckin"></ImageView>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/cards"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewChitieu"></ImageView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

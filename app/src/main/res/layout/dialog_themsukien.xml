@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent" android:layout_height="565dp">
+
+    <TextView
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sự kiện"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#0F3A8F"/>
+
+    <TextView
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sự kiện"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#E40E3A"/>
+
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_weight="9"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtTensukien"/>
+    </LinearLayout>
+
+    <TextView
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mô tả sự kiện"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#E40E3A"/>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="9"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edtMotasukien"/>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa điểm sự kiện"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#E40E3A"/>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="9"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edtDiadiemsukien"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textStyle="italic"
+            android:textColor="#0B3C9C"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ngày"
+            android:id="@+id/edtNgaysukien"></EditText>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lich"
+            android:id="@+id/btnChonNgaysukien"></ImageView>
+
+        <EditText
+            android:textStyle="italic"
+            android:textColor="#0B3C9C"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Giờ"
+            android:id="@+id/edtGiosukien"></EditText>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/stopwatch"
+            android:id="@+id/btnChonGiosukien"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgXacNhanSuKien"
+            android:src="@drawable/complete"></ImageView>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgHuySuKien"
+            android:src="@drawable/choose"></ImageView>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgXoaTextSuKien"
+            android:src="@drawable/eraser"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

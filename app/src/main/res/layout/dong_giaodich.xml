@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:weightSum="5"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#030867"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewTenViGiaodich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên ví" />
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#0A9121"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewSotiengiaodich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số tiền" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#054FA1"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewNhom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhóm" />
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#736407"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewNgaygiaodich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:textColor="#F40808"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewGhichugiaodich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú" />
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:textColor="#F40808"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái"
+                android:id="@+id/textviewtrangthaigiaodich"></TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageViewSuaGiaodich"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageViewXoagiaodich"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/delete" />
+    </LinearLayout>
+
+</LinearLayout>

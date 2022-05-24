@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".ViTri">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm vị trí checkin"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#CD4B4B"
+        android:textStyle="bold"></TextView>
+    <EditText
+        android:textStyle="bold"
+        android:textColor="#143198"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên vị trí"
+        android:textSize="25sp"
+        android:id="@+id/edtTenvitrine"></EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#143198"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả"
+        android:textSize="25sp"
+        android:id="@+id/edtMotane"></EditText>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/map"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:id="@+id/imageHinhvitrine"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#F41212"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vị trí" />
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/textViewVitriKinhdo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kinh độ" />
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/textViewVitriVydo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vỹ độ" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/imgMayAnh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/camera"></ImageView>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/imgFolder"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/folder"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="40dp"
+            android:id="@+id/imgXacNhanCheckin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/complete"></ImageView>
+        <ImageView
+            android:id="@+id/imgHuyCheckin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/choose"></ImageView>
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:id="@+id/imgGetVitri"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/placeholder"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

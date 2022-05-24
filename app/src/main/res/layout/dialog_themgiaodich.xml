@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textviewSotiengd"
+    android:layout_width="match_parent"
+    android:layout_height="620dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:textColor="#CD0C0C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/textViewTieudegd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#0E08BF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên ví: " />
+            <TextView
+                android:textColor="#B002D6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tiền: " />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#AC09C8"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/textViewTenvidialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên ví" />
+            <TextView
+                android:textColor="#A50739"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/textViewSotiendialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tiền" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#AC09C8"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+            <TextView
+                android:textColor="#A50739"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vnđ" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#0A6344"
+        android:textSize="20sp"
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền giao dịch" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#5A0D77"
+        android:textSize="20sp"
+        android:id="@+id/editTextSotiengd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#0A6344"
+        android:textSize="20sp"
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhóm" />
+
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#5A0D77"
+        android:textSize="20sp"
+        android:id="@+id/editTextNhomgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#0A6344"
+        android:textSize="20sp"
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#5A0D77"
+        android:textSize="20sp"
+        android:id="@+id/editTextGhichugd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#0A6344"
+        android:textSize="20sp"
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày giao dịch" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="2"
+            android:textColor="#5A0D77"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/editTextNgaygd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lich"
+            android:id="@+id/btnChonNgaygiaodich"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="#620EB6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/checkBoxThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thu" />
+
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:textColor="#620EB6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/checkboxchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chi" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgXacNhangiaodich"
+            android:src="@drawable/complete"></ImageView>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgHuySuagiaodich"
+            android:src="@drawable/choose"></ImageView>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgXoaTextgiaodich"
+            android:src="@drawable/eraser"></ImageView>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
